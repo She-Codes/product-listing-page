@@ -1,9 +1,37 @@
-* {
+*, *:before, *:after {
   box-sizing: border-box;
 }
 
-.grid:after {
-  content: "";
-  display: table;
-  clear: both;
+.wrapper {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  margin: -20px 0 20px -20px;
+}
+
+.col {
+  padding: 20px 0 0 20px;
+  flex: 1;
+}
+
+.prod {
+  background: #CCC;
+}
+
+.image {
+  position: relative;
+}
+
+.image p {
+  position: absolute;
+  top: 0;
+}
+
+.image img {
+  width: 100%;
+  display: block;
 }
