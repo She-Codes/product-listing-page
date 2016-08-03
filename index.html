@@ -28,7 +28,7 @@
             </div><!-- end .wrapper -->
         </header>
 
-        <div class="grid wrapper">
+        <div class="product-grid wrapper">
             <div class="row">
                 <div class="col">
                     <a href="#" class="product prod-1">
@@ -42,7 +42,7 @@
                     <p class="price">$5.00</p>
                     <p class="add">
                         <button>Add to Cart</button>
-                        <input type="number">
+                        <input type="text" class="qty" placeholder="1">
                     </p><!-- end .add -->
                 </div><!-- end .col -->
 
@@ -58,7 +58,7 @@
                     <p class="price">$3.50</p>
                     <p class="add">
                         <button>Add to Cart</button>
-                        <input type="number">
+                        <input type="text" class="qty" placeholder="1">
                     </p><!-- end .add -->
                 </div><!-- end .col -->
 
@@ -74,7 +74,7 @@
                     <p class="price">$2.00</p>
                     <p class="add">
                         <button>Add to Cart</button>
-                        <input type="number">
+                        <input type="text" class="qty" placeholder="1">
                     </p><!-- end .add -->
                 </div><!-- end .col -->
 
@@ -90,7 +90,7 @@
                     <p class="price">$8.50</p>
                     <p class="add">
                         <button>Add to Cart</button>
-                        <input type="number">
+                        <input type="text" class="qty" placeholder="1">
                     </p><!-- end .add -->
                 </div><!-- end .col -->
             </div><!-- end .row -->
@@ -108,7 +108,7 @@
                     <p class="price">$4.50</p>
                     <p class="add">
                         <button>Add to Cart</button>
-                        <input type="number">
+                        <input type="text" class="qty" placeholder="1">
                     </p><!-- end .add -->
                 </div><!-- end .col -->
 
@@ -124,7 +124,7 @@
                     <p class="price">$6.00</p>
                     <p class="add">
                         <button>Add to Cart</button>
-                        <input type="number">
+                        <input type="text" class="qty" placeholder="1">
                     </p><!-- end .add -->
                 </div><!-- end .col -->
 
@@ -140,7 +140,7 @@
                     <p class="price">$3.00</p>
                     <p class="add">
                         <button>Add to Cart</button>
-                        <input type="number">
+                        <input type="text" class="qty" placeholder="1">
                     </p><!-- end .add -->
                 </div><!-- end .col -->
 
@@ -156,7 +156,7 @@
                     <p class="price">$4.50</p>
                     <p class="add">
                         <button>Add to Cart</button>
-                        <input type="number">
+                        <input type="text" class="qty" placeholder="1">
                     </p><!-- end .add -->
                 </div><!-- end .col -->
             </div><!-- end .row -->
@@ -174,7 +174,7 @@
                     <p class="price">$2.50</p>
                     <p class="add">
                         <button>Add to Cart</button>
-                        <input type="number">
+                        <input type="text" class="qty" placeholder="1">
                     </p><!-- end .add -->
                 </div><!-- end .col -->
 
@@ -190,7 +190,7 @@
                     <p class="price">$6.00</p>
                     <p class="add">
                         <button>Add to Cart</button>
-                        <input type="number">
+                        <input type="text" class="qty" placeholder="1">
                     </p><!-- end .add -->
                 </div><!-- end .col -->
 
@@ -206,7 +206,7 @@
                     <p class="price">$5.00</p>
                     <p class="add">
                         <button>Add to Cart</button>
-                        <input type="number">
+                        <input type="text" class="qty" placeholder="1">
                     </p><!-- end .add -->
                 </div><!-- end .col -->
 
@@ -222,7 +222,7 @@
                     <p class="price">$2.75</p>
                     <p class="add">
                         <button>Add to Cart</button>
-                        <input type="number">
+                        <input type="text" class="qty" placeholder="1">
                     </p><!-- end .add -->
                 </div><!-- end .col -->
             </div><!-- end .row -->
@@ -230,7 +230,49 @@
     </section><!-- end .products -->
 
     <section class="shopping-cart">
+        <div class="cart-wrap">
+            <div class="cart-wrap-inner">
+                <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-shopping-cart fa-stack-1x"></i>
+                </span>
+                <span class="cart-qty">3</span>
+            </div><!-- end .cart-wrap-inner -->
+        </div><!-- end .cart-wrap -->
         <div class="wrapper">
+            <h2>Shopping Cart</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Product Name</th>
+                        <th>Unit Price</th>
+                        <th>Qty</th>
+                        <th>Total</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="promo-wrap">
+                <label for="promo-code">Promo Code</label>
+                <input type="text" id="promo-code">
+            </div><!-- end .promo-wrap -->
+
+            <p class="subtotal-wrap grid">
+                <span class="label">Subtotal</span>
+                <span class="subtotal">$15.00</span>
+            </p><!-- end .subtotal -->
         </div><!-- end .wrapper -->
     </section><!-- end .shopping-cart -->
 </body>
