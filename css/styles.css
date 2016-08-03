@@ -2,6 +2,23 @@
   box-sizing: border-box;
 }
 
+body {
+  padding: 1em 0;
+}
+
+body, input, button {
+  font-family: 'Nunito', sans-serif;
+}
+
+body, input, a, button {
+  color: #292929;
+  font-family: 'Nunito', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
 .wrapper {
   width: 90%;
   max-width: 1200px;
@@ -10,12 +27,33 @@
 
 .row {
   display: flex;
-  margin: -20px 0 20px -20px;
+  margin: -20px 0 40px -20px;
 }
 
 .col {
   padding: 20px 0 0 20px;
   flex: 1;
+  text-align: center;
+}
+
+.logo {
+  font-family: 'Amatic SC', cursive;
+  text-align: center;
+  font-size: 4rem;
+  padding-bottom: .4em;
+}
+
+.logo i {
+  font-size: 2.5rem;
+}
+
+.products header {
+  background: #F5F5F5;
+  font-size: .9rem;
+  padding: 1.2em 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 2.5em;
 }
 
 .prod {
@@ -26,12 +64,58 @@
   position: relative;
 }
 
-.image p {
+.description {
   position: absolute;
   top: 0;
+  width: 100%;
+  padding: 1em 0;
+  text-transform: uppercase;
 }
 
 .image img {
   width: 100%;
   display: block;
+}
+
+.row:nth-child(1) .col:nth-child(1) .description,
+.row:nth-child(2) .col:nth-child(3) .description,
+.row:nth-child(3) .col:nth-child(4) .description {
+  background: #FFC857;
+  color: #C5283D;
+}
+
+.row:nth-child(1) .col:nth-child(2) .description,
+.row:nth-child(2) .col:nth-child(1) .description,
+.row:nth-child(3) .col:nth-child(2) .description {
+  background: #F6EED9;
+  color: #E9724C;
+}
+
+.row:nth-child(1) .col:nth-child(3) .description,
+.row:nth-child(2) .col:nth-child(4) .description,
+.row:nth-child(3) .col:nth-child(3) .description {
+  background: #E9724C;
+  color: #F6EED9;
+}
+
+.row:nth-child(1) .col:nth-child(4) .description,
+.row:nth-child(2) .col:nth-child(2) .description,
+.row:nth-child(3) .col:nth-child(1) .description {
+  background: #C5283D;
+  color: #F6EED9;
+}
+
+.description, .product-name, .price {
+  font-size: .9rem;
+  font-weight: 700;
+}
+
+.product-name {
+  font-weight: 300;
+  text-transform: capitalize;
+  padding-top: .6em;
+}
+
+.price {
+  padding: .7em 0;
 }

@@ -5,7 +5,7 @@
     <title>Product Listing Page</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
-
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Nunito:300,400,700" rel="stylesheet">
     <!--[if lt IE 9]>
         <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
@@ -28,18 +28,18 @@
             </div><!-- end .wrapper -->
         </header>
 
-        <div class="wrapper">
+        <div class="grid wrapper">
             <div class="row">
                 <div class="col">
                     <a href="#" class="product prod-1">
                         <div class="image">
                             <img src="images/blue-1326154_640.jpg" alt="blueberries">
-                            <p>This is a description</p>
+                            <p class="description">Antioxidant Power</p>
                         </div><!-- end .image -->
 
-                        <p class="product-name">The name of this product</p>
+                        <p class="product-name">Blueberry basket</p>
                     </a><!-- end .product -->
-                    <p class="price">$15.00</p>
+                    <p class="price">$5.00</p>
                     <p class="add">
                         <button>Add to Cart</button>
                         <input type="number">
@@ -50,12 +50,12 @@
                     <a href="#" class="product prod-2">
                         <div class="image">
                             <img src="images/bread-1281053_640.jpg" alt="bread">
-                            <p>This is a description</p>
+                            <p class="description">Fresh-baked Boules</p>
                         </div><!-- end .image -->
 
-                        <p class="product-name">The name of this product</p>
+                        <p class="product-name">Sourdough Bread</p>
                     </a><!-- end .product -->
-                    <p class="price">$15.00</p>
+                    <p class="price">$3.50</p>
                     <p class="add">
                         <button>Add to Cart</button>
                         <input type="number">
@@ -66,12 +66,12 @@
                     <a href="#" class="product prod-3">
                         <div class="image">
                             <img src="images/dessert-1079759_640.jpg" alt="dessert">
-                            <p>This is a description</p>
+                            <p class="description">Cool and Creamy</p>
                         </div><!-- end .image -->
 
-                        <p class="product-name">The name of this product</p>
+                        <p class="product-name">Yogurt Parfait</p>
                     </a><!-- end .product -->
-                    <p class="price">$15.00</p>
+                    <p class="price">$2.00</p>
                     <p class="add">
                         <button>Add to Cart</button>
                         <input type="number">
@@ -82,12 +82,12 @@
                     <a href="#" class="product prod-4">
                         <div class="image">
                             <img src="images/food-712665_640.jpg" alt="salmon">
-                            <p>This is a description</p>
+                            <p class="description">Good for you Omegas</p>
                         </div><!-- end .image -->
 
-                        <p class="product-name">The name of this product</p>
+                        <p class="product-name">Salmon Dish</p>
                     </a><!-- end .product -->
-                    <p class="price">$15.00</p>
+                    <p class="price">$8.50</p>
                     <p class="add">
                         <button>Add to Cart</button>
                         <input type="number">
@@ -100,12 +100,12 @@
                     <a href="#" class="product prod-1">
                         <div class="image">
                             <img src="images/food-712667_640.jpg" alt="pizza rolls">
-                            <p>This is a description</p>
+                            <p class="description">Party Fun</p>
                         </div><!-- end .image -->
 
-                        <p class="product-name">The name of this product</p>
+                        <p class="product-name">Pizza Rolls</p>
                     </a><!-- end .product -->
-                    <p class="price">$15.00</p>
+                    <p class="price">$4.50</p>
                     <p class="add">
                         <button>Add to Cart</button>
                         <input type="number">
@@ -116,12 +116,12 @@
                     <a href="#" class="product prod-2">
                         <div class="image">
                             <img src="images/food-1247612_640.jpg" alt="pizza rolls">
-                            <p>This is a description</p>
+                            <p class="description">Power Breakfast</p>
                         </div><!-- end .image -->
 
-                        <p class="product-name">The name of this product</p>
+                        <p class="product-name">Banana Pancakes</p>
                     </a><!-- end .product -->
-                    <p class="price">$15.00</p>
+                    <p class="price">$6.00</p>
                     <p class="add">
                         <button>Add to Cart</button>
                         <input type="number">
@@ -132,12 +132,12 @@
                     <a href="#" class="product prod-3">
                         <div class="image">
                             <img src="images/onions-1397037_640.jpg" alt="onions">
-                            <p>This is a description</p>
+                            <p class="description">Farm Fresh</p>
                         </div><!-- end .image -->
 
-                        <p class="product-name">The name of this product</p>
+                        <p class="product-name">Onion Bundle</p>
                     </a><!-- end .product -->
-                    <p class="price">$15.00</p>
+                    <p class="price">$3.00</p>
                     <p class="add">
                         <button>Add to Cart</button>
                         <input type="number">
@@ -148,12 +148,12 @@
                     <a href="#" class="product prod-4">
                         <div class="image">
                             <img src="images/paprika-5358_640.jpg" alt="green peppers">
-                            <p>This is a description</p>
+                            <p class="description">Bright Green Peppers</p>
                         </div><!-- end .image -->
 
-                        <p class="product-name">The name of this product</p>
+                        <p class="product-name">Green Peppers</p>
                     </a><!-- end .product -->
-                    <p class="price">$15.00</p>
+                    <p class="price">$4.50</p>
                     <p class="add">
                         <button>Add to Cart</button>
                         <input type="number">
@@ -166,12 +166,12 @@
                     <a href="#" class="product prod-1">
                         <div class="image">
                             <img src="images/paprika-65270_640.jpg" alt="peppers">
-                            <p>This is a description</p>
+                            <p class="description">Hot and Spicy</p>
                         </div><!-- end .image -->
 
-                        <p class="product-name">The name of this product</p>
+                        <p class="product-name">Green and Red Peppers</p>
                     </a><!-- end .product -->
-                    <p class="price">$15.00</p>
+                    <p class="price">$2.50</p>
                     <p class="add">
                         <button>Add to Cart</button>
                         <input type="number">
@@ -182,12 +182,12 @@
                     <a href="#" class="product prod-2">
                         <div class="image">
                             <img src="images/strawberries-1326148_640.jpg" alt="strawberries">
-                            <p>This is a description</p>
+                            <p class="description">Plump and Juicy</p>
                         </div><!-- end .image -->
 
-                        <p class="product-name">The name of this product</p>
+                        <p class="product-name">Farm-fresh Strawberries</p>
                     </a><!-- end .product -->
-                    <p class="price">$15.00</p>
+                    <p class="price">$6.00</p>
                     <p class="add">
                         <button>Add to Cart</button>
                         <input type="number">
@@ -198,12 +198,12 @@
                     <a href="#" class="product prod-3">
                         <div class="image">
                             <img src="images/tomatoes-5356_640.jpg" alt="tomatoes">
-                            <p>This is a description</p>
+                            <p class="description">Ripe and Ready</p>
                         </div><!-- end .image -->
 
-                        <p class="product-name">The name of this product</p>
+                        <p class="product-name">Vine Tomatoes</p>
                     </a><!-- end .product -->
-                    <p class="price">$15.00</p>
+                    <p class="price">$5.00</p>
                     <p class="add">
                         <button>Add to Cart</button>
                         <input type="number">
@@ -214,12 +214,12 @@
                     <a href="#" class="product prod-4">
                         <div class="image">
                             <img src="images/white-chocolate-380702_640.jpg" alt="white chocolate">
-                            <p>This is a description</p>
+                            <p class="description">Heavenly Treat</p>
                         </div><!-- end .image -->
 
-                        <p class="product-name">The name of this product</p>
+                        <p class="product-name">Chunk White Chocolate</p>
                     </a><!-- end .product -->
-                    <p class="price">$15.00</p>
+                    <p class="price">$2.75</p>
                     <p class="add">
                         <button>Add to Cart</button>
                         <input type="number">
