@@ -19,6 +19,10 @@ a {
   text-decoration: none;
 }
 
+input {
+  outline: none;
+}
+
 .grid:after {
   content: "";
   display: table;
@@ -150,12 +154,11 @@ button {
   display: inline-block;
   margin: 0;
   padding: 0 .7em;
-  outline: none;
   font-weight: 700;
   border: 2px solid #DDD;
   vertical-align: middle;
   text-align: center;
-  width: 40px;
+  width: 3.7em;
 }
 
 /* Chrome/Opera/Safari */
@@ -180,6 +183,7 @@ button {
 
 .shopping-cart {
   background: #481D24;
+  padding-bottom: 30px;
 }
 
 .cart-wrap {
@@ -215,4 +219,122 @@ button {
   top: 13%;
   color: #FFF;
   border-radius: 50%;
+}
+
+.cart-table img {
+  width: 100px;
+}
+
+.cart-table-wrap {
+  width: 90%;
+  margin: 0 auto;
+  color: #FFF;
+}
+
+.cart-table-wrap h2 {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 2rem;
+  padding-bottom: .8em;
+}
+
+.cart-table {
+  width: 100%;
+}
+
+.cart-table th, .cart-table td {
+  vertical-align: top;
+}
+
+.cart-table th, .cart-table td:not(.remove-cell) {
+  text-align: left;
+}
+
+.cart-table th {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  padding-bottom: .7em;
+}
+
+.cart-table td {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.cart-table tbody tr {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+.cart-table tbody tr:last-child {
+  border-bottom: 0;
+}
+
+.cart-table input {
+  border: 0;
+}
+
+.pic-cell,
+.price-cell,
+.qty-cell {
+  width: 1px;
+  white-space: nowrap;
+}
+
+.pic-cell {
+  padding-right: 15px;
+}
+
+.price-cell,
+.qty-cell {
+  padding-right: 35px;
+}
+
+.name-cell {
+  width: 50%;
+}
+
+.remove-cell {
+  text-align: right;
+}
+
+.remove-cell i {
+  cursor: pointer;
+}
+
+.qty-cell input {
+  font-size: .9rem;
+  width: 2em;
+  height: 1.5em;
+  line-height: 1.5em;
+  text-align: center;
+}
+
+.promo-wrap {
+  padding: 20px 0 25px;
+}
+
+.promo-wrap label, .promo-wrap input {
+  font-weight: 300;
+  font-size: .9rem;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.promo-wrap input {
+  width: 8em;
+  padding: .1em;
+  margin-left: 1em;
+}
+
+.subtotal-wrap {
+  font-size: 1.7rem;
+  padding-top: .6em;
+}
+
+.subtotal-wrap label {
+  float: left;
+}
+
+.subtotal-wrap .subtotal {
+  float: right;
 }
